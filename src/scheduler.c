@@ -183,7 +183,7 @@ static zend_always_inline php_parallel_runtime_t *php_parallel_scheduler_setup(p
 
 	PG(during_request_startup) = 0;
 	SG(sapi_started) = 0;
-	SG(headers_sent) = 1;
+	SG(headers_sent) = 0;
 	SG(request_info).no_headers = 1;
 
 	return runtime;
